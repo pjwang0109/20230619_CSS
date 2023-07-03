@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 背景</title>
+    <style>
+      .box1 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        background-image: linear-gradient(#00000030, #00000030),
+          url("https://picsum.photos/300/200/?random=10");
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+      }
+
+      .box2 {
+        width: 300px;
+        height: 200px;
+        /* border: 5px solid #00f; */
+        background-image: url("https://picsum.photos/300/200/?random=30");
+        border-radius: 10px 10px 0 0;
+      }
+      .card {
+        background-image: url("https://picsum.photos/300/200/?random=50");
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+      }
+      .pic-txt {
+        /* line-height 高度撐開 */
+        line-height: 200px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: block;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: bold;
+        border-radius: 10px 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 多重圖片+漸層 -->
+    <div class="box1"></div>
+
+    <div class="box2">
+      <div class="card">
+        <span class="pic-txt">轉職工程師</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 relative 定位</title>
+    <style>
+        .box{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .list{
+            width: 100px;
+            height: 100px;
+            background-color: #444;
+            font-size: 2rem;
+            color: #fff;
+            margin: 5px 10px;
+        }
+        .list:nth-child(15){
+            background-color: #f00;
+            position: relative;
+            z-index: 3;
+        }
+        .list:nth-child(16){
+            background-color: #00f;
+            margin-left:-50px ;
+            position: relative;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="list">1</div>
+        <div class="list">2</div>
+        <div class="list">3</div>
+        <div class="list">4</div>
+        <div class="list">5</div>
+        <div class="list">6</div>
+        <div class="list">7</div>
+        <div class="list">8</div>
+        <div class="list">9</div>
+        <div class="list">10</div>
+        <div class="list">11</div>
+        <div class="list">12</div>
+        <div class="list">13</div>
+        <div class="list">14</div>
+        <div class="list">15</div>
+        <div class="list">16</div>
+        <div class="list">17</div>
+        <div class="list">18</div>
+        <div class="list">19</div>
+        <div class="list">20</div>
+        <div class="list">21</div>
+        <div class="list">22</div>
+        <div class="list">23</div>
+        <div class="list">24</div>
+        <div class="list">25</div>
+    </div>
+    
+</body>
+</html>

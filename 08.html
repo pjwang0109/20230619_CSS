@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08 位置練習</title>
+    <style>
+      .pic {
+        border: 2px solid #f00;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: 10px;
+      }
+      .pic img {
+        width: 100%;
+        vertical-align: top;
+      }
+      .box {
+        background-color: #fa0;
+        padding: 4px 5px;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+      }
+      .box::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 6px solid #f40;
+        border-left: 8px solid #0000;
+        top:100%;
+        left:0;
+      }
+
+      .card{
+        margin: 50px;
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid #000;
+        /* border-right: 40px solid #00f; */
+        /* border-bottom: 40px solid #f00; */
+        border-left: 60px solid #0000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pic">
+      <img src="https://picsum.photos/300/200/?random=10" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit
+        eum nisi odio obcaecati nam numquam laudantium nobis odit rem.
+      </p>
+      <div class="box">嚴選商品</div>
+    </div>
+
+    <div class="card"></div>
+  </body>
+</html>
